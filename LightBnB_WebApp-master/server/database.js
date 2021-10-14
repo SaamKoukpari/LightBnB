@@ -193,10 +193,10 @@ const addProperty = function(property) {
     country,
     parking_spaces,
     number_of_bathrooms,
-    number_of_bedrooms,
-    RETURNING *;
+    number_of_bedrooms
   )
-  VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14);
+  VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+  RETURNING *;
   `,
   [
     property.owner_id,
